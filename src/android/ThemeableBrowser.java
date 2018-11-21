@@ -784,6 +784,7 @@ public class ThemeableBrowser extends CordovaPlugin {
                 settings.setBuiltInZoomControls(features.zoom);
                 settings.setDisplayZoomControls(false);
                 settings.setPluginState(android.webkit.WebSettings.PluginState.ON);
+                settings.setUserAgentString("matrixapp");
 
                 //Toggle whether this is enabled or not!
                 Bundle appSettings = cordova.getActivity().getIntent().getExtras();
